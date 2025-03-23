@@ -1,0 +1,33 @@
+body {
+  background-color: #140033;
+}
+
+.skills {
+  text-align: center;
+  padding: 40px;
+  /* background-color: #f4f4f404; */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.151);
+  margin-top: 50px;
+}
+
+.skills-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-image {
+  width: 100%;
+  max-width: 888px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skills-image:hover {
+  transform: scale(1.05);
+}

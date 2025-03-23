@@ -1,0 +1,240 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5a00e2;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8534ff;
+  border-radius: 100px;
+}
+
+/* //////////////////////////////// */
+/* styles/globals.css */
+/* body {
+  font-family: var(--font-geist-sans), sans-serif;
+} */
+
+/* h1 {
+  font-family: var(--font-bungee-spice), cursive;
+}
+
+h2 {
+  font-family: var(--font-ga-maamli), serif;
+}
+
+p {
+  font-family: var(--font-playwrite-au-sa), sans-serif;
+} */
+
+/* /////////////////////////////// */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  padding: 10px;
+  background-color: #140033;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  /* margin: 0; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+nav img {
+  width: 6rem;
+  height: 6rem;
+}
+
+nav .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  font-size: larger;
+}
+
+nav a:hover {
+  color: #0049b8;
+  text-shadow: 10px 10px 10px #e61515a1;
+}
+
+.typing-container {
+  max-width: 300px;
+  display: flex;
+}
+
+.typing-container h1 {
+  display: flex;
+  margin-top: 22px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+p {
+  font-family: var(--font-playwrite-au-sa), sans-serif;
+}
+
+.typing-container h1 span {
+  display: inline-block;
+  opacity: 0;
+  animation: typing 4s steps(1) infinite;
+  font-size: 4rem;
+  color: hsla(335, 95%, 36%, 0.829);
+  /* color: #e97373; */
+  padding: 0;
+  margin: 0;
+}
+
+.typing-container h1 span:nth-child(1) {
+  animation-delay: 5s;
+}
+
+.typing-container h1 span:nth-child(2) {
+  animation-delay: 5.1s;
+}
+
+.typing-container h1 span:nth-child(3) {
+  animation-delay: 5.2s;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 845px) and (max-width: 1000px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  nav ul {
+    display: flex;
+    border: #d1a30b 1px solid;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul a {
+    border: #d1a30b 1px solid;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin: 0 4px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul a:hover {
+    background-color: #d1a30b;
+    color: #2c2c2c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .typing-container h1 span {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .burger div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    background-color: #140033;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: -0.2px;
+  }
+
+  nav a {
+    padding: 8px 16px;
+    margin: 4px 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.show {
+    display: block;
+  }
+
+  .menu ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .typing-container h1 span {
+    font-size: 2rem;
+  }
+}

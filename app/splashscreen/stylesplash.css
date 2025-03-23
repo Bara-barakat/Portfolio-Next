@@ -1,0 +1,91 @@
+.splash-screen {
+  position: fixed;
+  background-color: #f0f0f0;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+span {
+  margin: 4px;
+  text-shadow: 10px 10px 10px #ff00001a;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1s forwards;
+}
+
+.word1 {
+  animation-delay: 0s;
+}
+
+.word2 {
+  animation-delay: 1s;
+  animation: slidetop 2s forwards;
+}
+
+.word3 {
+  animation-delay: 1.5s;
+}
+
+.word4 {
+  animation-delay: 2s;
+  animation: slidetop 3s forwards;
+}
+
+.word5 {
+  animation-delay: 3s;
+}
+
+.word6 {
+  animation: slideInRight 1s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidetop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
